@@ -1,0 +1,100 @@
+HTML {
+    color: white;
+    font-family: vag;
+    margin:0;width:100vw;
+    background-image: url(background.png);
+    background-position-y: -20vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+html::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+BODY {
+    position: absolute;
+    top: 10vh;
+}
+
+@font-face {
+    font-family: "vag";
+    src: url(vag_rounded_pro.ttf);
+}
+
+.menu {
+    position: fixed;
+    background-color: #81ff81;
+    top: 0;
+    left: 0.5vw;
+    width: 99vw;
+    height: 15vh;
+    border-radius: 0 0 1vw 1vw;
+}
+
+.option {
+    position: relative;
+    float: left;
+    height: 15vh;
+    width: 19.8vw;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    line-height: 15vh;
+    font-size: 2em;
+    background-color: #81ff81;
+    border-radius: 0 0 1vh 1vh;
+}
+
+.option img {
+    width: 15vh;
+}
+
+.option:hover {
+    background-color: #00d400;
+}
+
+.title {
+    font-size: 5em;
+    text-align: center;
+    width: 100vw;
+    top: 10px;
+    -webkit-text-stroke: 5px black;
+}
+
+.container {
+    position: absolute;
+    color: black;
+    text-align: center;
+    background-color: #81ff81;
+    border-radius: 1vh;
+    font-size: 1.5em;
+    padding-left: 4px;
+    padding-top: 2px;
+}
+
+.footer {
+    position: absolute;
+    background-color: #81ff81;
+    left: 0.5vw;
+    width: 98vw;
+    height: 4vh;
+    top: 96vh;
+    border-radius: 1vh;
+    line-height: 4vh;
+    color: black;
+}
+
+.footer::before {
+    content: " ";
+    padding-left: 10px;
+}
+
+.footer::after {
+    content: " ";
+    height: 3vh;
+    display: inline-block;
+}
